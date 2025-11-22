@@ -1,6 +1,6 @@
 # FPGA Dynamic Text Display Driver for LCD (CP866 Font)
 
-This project implements a standalone, reusable Verilog driver for displaying text on an 800x480 parallel RGB LCD. It features a real-time writable text buffer (VRAM) and a built-in CP866 font ROM, making it an ideal component for any FPGA project requiring a text-based user interface.
+This project implements a Verilog driver for displaying text on an 800x480 parallel RGB LCD. It features a real-time writable text buffer (VRAM) and a built-in CP866 font ROM.
 
 ## Features
 
