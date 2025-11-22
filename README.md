@@ -5,7 +5,7 @@ This project implements a Verilog driver for displaying text on an 800x480 paral
 ## Features
 
 *   **Dynamic VRAM:** The text buffer is implemented as a dual-port BRAM, allowing external modules (like a CPU, UART, or custom logic) to update the screen content in real-time.
-*   **Modular Architecture:** The design is cleanly separated into a timing controller, a text buffer (VRAM), and a font ROM (character decoder), making it easy to understand and integrate.
+*   **Modular Architecture:** The design is separated into a timing controller, a text buffer (VRAM), and a font ROM (character decoder).
 *   **80x40 Character Grid:** Renders a grid of 80 columns by 40 rows of text.
 *   **10x12 Character Cells:** Each character is rendered within a 10x12 pixel cell, including a 1-pixel border for clear separation and readability.
 *   **CP866 Font Support:** Includes a full 8x8 pixel font for the CP866 charset, providing comprehensive support for English, Russian, and pseudographics characters.
@@ -18,7 +18,7 @@ This project implements a Verilog driver for displaying text on an 800x480 paral
 
 ## Architecture
 
-The driver is composed of three main logical blocks, instantiated and connected by a top-level wrapper. This modularity allows for easy integration and modification.
+The driver is composed of three main logical blocks, instantiated and connected by a top-level wrapper.
 
 #### `cp866_screen_drv.v` (Top-Level Wrapper)
 This is the main module you will instantiate in your own projects. It encapsulates the entire driver, connecting the sub-modules and exposing a simple write interface to the outside world.
