@@ -65,7 +65,7 @@ always @(posedge clk) begin
     start_write_pulse <= do_write; // Creates a single-cycle pulse
 end
 
-cp868_screen_drv my_screen_driver (
+cp866_screen_drv my_screen_driver (
     .clk(clk),
     .rst_n(rst_n),
     // ... connect LCD outputs ...
